@@ -10,6 +10,7 @@ function starwars() {
     setTimeout(function () {
         window.scrollTo(0, 0);
         document.getElementsByTagName('html')[0].classList.add('starwars_op');
+        document.body.classList.remove('hide');
         var Y = document.body.clientHeight + 10;
         document.body.style.transform = 'rotateX(50deg) translateZ(-5em) translateY(' + Y + 'px) scaleX(.7)';
         if (audio) {
