@@ -10,7 +10,7 @@
     display: none;
 }
 .starwars_op {
-    background: #141414;
+    background-color: #141414;
     /*background: url(space.png) 0 0;*/
     color: #ffe81f;
     perspective: 1000px;
