@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2015-12-09 21:26:45
+ * @version $Id$
+ */
+
+.starwars_op {
+    background: #141414;
+    /*background: url(space.png) 0 0;*/
+    color: #ffe81f;
+    perspective: 1000px;
+    overflow: hidden;
+}
+.starwars_op body {
+    animation-name: starwars;
+    animation-duration: 85s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes starwars {
+    95% {
+        transform: rotateX(70deg) translateZ(-5em) translateY(-500px) scaleX(.7);
+    }
+    100% {
+        transform: rotateX(0) translateZ(0) translateY(0) scaleX(1);
+    }
+}
+
